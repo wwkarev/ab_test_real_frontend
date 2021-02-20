@@ -1,0 +1,8 @@
+version: '3'
+services:
+  app:
+    container_name: docker-ab-test-real-frontend
+    restart: always
+    build: .
+    ports:
+    - '${DOCKER_PORT}:80'
